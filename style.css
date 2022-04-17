@@ -1,0 +1,81 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #D3D3BB;
+}
+
+.color-nav {
+    color: #D3D3BB;
+}
+
+.color-body {
+    color: #2c3534;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.fs-1 {
+    font-size: 36px !important;
+}
+
+.fs-2 {
+    font-size: 24px !important;
+}
+
+.fs-3 {
+    font-size: 20px !important;
+}
+
+.fs-4 {
+    font-size: 16px !important;
+}
+
+
+/* navbar */
+
+#navbar {
+    background-color: #2c3534;
+}
+
+.offcanvas {
+    background-color: #D3D3BB
+}
+
+
+/* navbar */
+
+
+/* our product */
+
+#our-product .card-img {
+    border-radius: 10%;
+    max-height: 150px;
+    max-width: 150px;
+    object-fit: cover;
+}
+
+
+/* our product end */
+
+
+/* Desktop */
+
+@media (min-width: 576px) {
+    #about-us .container {
+        width: 70%;
+    }
+    #about-us h1 {
+        font-size: 26px !important;
+    }
+    #about-us p {
+        font-size: 22px !important;
+    }
+    .our-product h1 {
+        font-size: 26px !important;
+        text-align: center !important;
+    }
+}
