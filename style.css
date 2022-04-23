@@ -57,6 +57,11 @@ body {
     border-radius: 20px;
 }
 
+.owl-carousel .item-doc img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 
 /* our product */
 
@@ -75,8 +80,27 @@ body {
     border-radius: 20px;
 }
 
-#our-product .col-4 {
+#our-product .btn {
+    border: 1px solid #2c3534;
+    color: #2c3534;
+    font-size: 20px;
+}
+
+#our-product .btn:hover {
+    border: 1px solid #D3D3BB;
     background-color: #2c3534;
+    color: #D3D3BB;
+    font-size: 20px;
+}
+
+#footer {
+    background-color: #2c3534;
+    /* height: 100px; */
+}
+
+#footer img {
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -106,17 +130,13 @@ body {
     #about-us p {
         font-size: 22px !important;
     }
+    #map .container {
+        width: 75%;
+    }
     .our-product h1 {
         font-size: 26px !important;
-        text-align: center !important;
     }
     .owl-carousel .item img {
         height: 400px;
     }
-    /* #our-product .img-left {
-        margin-left: 0px;
-    }
-    #our-product .img-right {
-        margin-right: 0px; 
-    }*/
 }
