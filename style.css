@@ -131,7 +131,7 @@ body {
     overflow: hidden;
 }
 
-#menu .circle::before {
+#menu .card .circle::before {
     content: '';
     position: absolute;
     top: 0;
@@ -143,7 +143,7 @@ body {
     transition: 0.5s;
 }
 
-#menu .circle:hover:before {
+#menu .card:hover .circle:before {
     background-color: #2c3534;
     clip-path: circle(200px at center);
 }
@@ -158,9 +158,70 @@ body {
     transition: 0.5s;
 }
 
-.card:hover img {
-    left: 80% !important;
-    height: 250px !important;
+#menu .card:hover img {
+    left: 80%;
+    height: 250px;
+}
+
+#menu .card .content {
+    position: relative;
+    width: 50%;
+    padding: 20px 0px 10px 20px;
+    /* background-color: red; */
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#menu .card:hover .content {
+    left: -60px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu .card .content h2 {
+    color: #D3D3BB;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+#menu .card .content p {
+    color: #D3D3BB;
+    font-size: 14px;
+}
+
+
+/* mobile menu */
+
+@media (max-width: 991px) {
+    #menu .card {
+        width: auto;
+        max-width: 250px;
+        align-items: flex-start;
+    }
+    #menu .card:hover {
+        height: 300px;
+    }
+    #menu .card .content {
+        width: 100%;
+        /* left: 0; */
+        padding: 20px;
+    }
+    #menu .card:hover img {
+        top: 75%;
+        left: 50%;
+        height: 150px;
+    }
+    #menu .card:hover .content {
+        left: -0px;
+    }
+}
+
+@media (min-width: 420px) {
+    #menu .card .content {
+        padding: 20px;
+    }
 }
 
 
